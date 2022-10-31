@@ -27,12 +27,18 @@
       <input type="password" name="password" id="user-password" />
       <hr />
       <h2>How should we verify your account?</h2>
-      <input type="radio" name="verify" id="via-txt-msg" value="txt"/>
-      <label for="via-txt-msg">Via text message</label>
-      <input type="radio" name="verify" id="via-phone-call" value="phone" />
-      <label for="via-phone-call">Via a phone call</label>
-      <input type="radio" name="verify" id="via-email" value="email"/>
-      <label for="via-email">Via an email</label>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="via-txt-msg" value="txt" />
+        <label for="via-txt-msg">Via text message</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="via-phone-call" value="phone" />
+        <label for="via-phone-call">Via a phone call</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="via-email" value="email" />
+        <label for="via-email">Via an email</label>
+      </div>
 
       <button>Submit</button>
     </form>
