@@ -47,6 +47,12 @@ textarea:focus {
   border-color: rgba(62, 3, 118, 0.999);
 }
 
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 button {
   display: block;
   font: inherit;
@@ -54,6 +60,7 @@ button {
   color: white;
   border: 1px solid purple;
   padding: 0.5rem 1.5rem;
+  margin-right: 0.5rem;
   border-radius: 4px;
   cursor: pointer;
 }
