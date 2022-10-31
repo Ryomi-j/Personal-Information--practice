@@ -20,6 +20,9 @@
       <label for="user-age">Your age</label>
       <input type="number" name="age" id="user-age" />
 
+      <label for="user-message">Your message</label>
+      <textarea name="message" id="user-message" cols="30" rows="10"></textarea>
+
       <label for="user-email">Your Email</label>
       <input type="email" name="email" id="user-email" />
 
@@ -42,17 +45,27 @@
       <hr />
       <h2>Do you agree to our terms?</h2>
       <div class="form-control-inline">
-        <input type="checkbox" id="agree-terms" name="terms"/>
+        <input type="checkbox" id="agree-terms" name="terms" />
         <label for="agree-terms">Yes</label>
       </div>
       <hr />
       <h2>How should we contact you?</h2>
       <div class="form-control-inline">
-        <input type="checkbox" id="contact-email" name="contact" value="email"/>
+        <input
+          type="checkbox"
+          id="contact-email"
+          name="contact"
+          value="email"
+        />
         <label for="contact-email">Contact me via email</label>
       </div>
       <div class="form-control-inline">
-        <input type="checkbox" id="contact-phone" name="contact" value="phone"/>
+        <input
+          type="checkbox"
+          id="contact-phone"
+          name="contact"
+          value="phone"
+        />
         <label for="contact-phone">Contact me via phone</label>
       </div>
       <button>Submit</button>
