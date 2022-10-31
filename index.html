@@ -23,15 +23,21 @@
           <ul>
             <li>
               <label for="user-name">Your Name</label>
-              <input type="text" name="name" id="user-name" />
+              <input type="text" name="name" id="user-name" required />
             </li>
             <li>
               <label for="user-email">Your Email</label>
-              <input type="email" name="email" id="user-email" />
+              <input type="email" name="email" id="user-email" required />
             </li>
             <li>
               <label for="user-password">Your Password</label>
-              <input type="password" name="password" id="user-password" />
+              <input
+                type="password"
+                name="password"
+                id="user-password"
+                required
+                minlength="8"
+              />
             </li>
           </ul>
         </section>
@@ -40,11 +46,25 @@
           <ul>
             <li>
               <label for="user-age">Your age</label>
-              <input type="number" name="age" id="user-age" />
+              <input
+                type="number"
+                name="age"
+                id="user-age"
+                required
+                min="18"
+                max="100"
+              />
             </li>
             <li>
               <label for="user-birthdate">Your birthdate</label>
-              <input type="date" name="birthdate" id="user-birthdate" />
+              <input
+                type="date"
+                name="birthdate"
+                id="user-birthdate"
+                required
+                min="1921-01-01"
+                max="2003-10-31"
+              />
             </li>
             <li>
               <label for="color">What's your favorite color?</label>
@@ -64,7 +84,13 @@
           <h2>How should we verify your account?</h2>
           <ul>
             <li class="form-control-inline">
-              <input type="radio" name="verify" id="via-txt-msg" value="txt" />
+              <input
+                type="radio"
+                name="verify"
+                id="via-txt-msg"
+                value="txt"
+                required
+              />
               <label for="via-txt-msg">Via text message(SMS)</label>
             </li>
             <li class="form-control-inline">
@@ -73,11 +99,18 @@
                 name="verify"
                 id="via-phone-call"
                 value="phone"
+                required
               />
               <label for="via-phone-call">Via a phone call</label>
             </li>
             <li class="form-control-inline">
-              <input type="radio" name="verify" id="via-email" value="email" />
+              <input
+                type="radio"
+                name="verify"
+                id="via-email"
+                value="email"
+                required
+              />
               <label for="via-email">Via an email</label>
             </li>
           </ul>
